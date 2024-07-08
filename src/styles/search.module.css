@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.searchWrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    padding-top: 5%;
+    padding-left: 9%;
+    
+}
+
+.search {
+    width: 40%;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-size: 20px;
+    background-color: #727D71;
+    font-family: 'Lato';
+    border: none;
+    color: #ad905c;
+    height: 40px;
+    padding: 10px 20px;
+    margin-left: 10%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+}
+
+.search::placeholder {
+    color: #ad905c;
+}

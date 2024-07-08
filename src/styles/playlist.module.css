@@ -1,0 +1,106 @@
+.wrap {
+    margin-right: 10%;
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); /* Adjust as necessary */
+    width: 40%;
+    height: 100%;
+    row-gap: 3px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    grid-row: 1;
+    font-size: 20px;
+    color: #F6B37D;
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-align: left;
+    border: none;
+    background: transparent;
+    padding-bottom: 4.5%;
+}
+
+.header::placeholder {
+    color: #F6B37D;
+}
+
+.header:focus {
+    outline: none;
+}
+
+.songTitle {
+    font-size: 25px;
+    color: #A63C06;
+    font-family: 'Roboto';
+    border-bottom: 2px solid #A63C06;
+}
+
+.song:nth-child(2) .songTitle {
+    grid-row: 2;
+}
+
+.song:nth-child(3) .songTitle {
+    grid-row: 3;
+}
+
+.song:nth-child(4) .songTitle {
+    grid-row: 4;
+}
+
+.song:nth-child(5) .songTitle {
+    grid-row: 5;
+}
+
+.song:nth-child(6) .songTitle {
+    grid-row: 6;
+}
+
+.song {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.addButton {
+    background: transparent;
+    border: none;
+    font-size: 2em; /* Adjust as necessary */
+    color: #FAF6F6; /* Same color as your text */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-self: end;
+}
+
+.addButton:hover {
+    transform: scale(1.1); /* Slightly enlarge the button when hovered */
+}
+
+.header input {
+    font-size: 20px;
+    color: #F6B37D;;
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-align: left;
+    border-bottom: none; /* Optional: to mimic table header */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: transparent;
+}
+
+.header input:hover {
+    font-size: 20px;
+    color: #F6B37D;;
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-align: left;
+    border-bottom: none; /* Optional: to mimic table header */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    background: transparent;
+}

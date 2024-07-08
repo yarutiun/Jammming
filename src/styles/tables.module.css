@@ -1,0 +1,74 @@
+.wrap {
+    margin-left: 10%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); /* Adjust as necessary */
+    width: 40%;
+    height: 100%;
+    row-gap: 30px;
+}
+
+.header {
+    grid-row: 1;
+    font-size: 20px;
+    color: #F6B37D;
+    font-family: 'Roboto';
+    font-size: 40px;
+    text-align: center;
+}
+
+.one, .two, .three, .four, .five {
+    font-size: 25px;
+    color: #A63C06;
+    font-family: 'Roboto';
+    border-bottom: 2px solid #A63C06;
+}
+
+.one {
+    grid-row: 2;
+}
+
+.two {
+    grid-row: 3;
+}
+
+.three {
+    grid-row: 4;
+}
+
+.four {
+    grid-row: 5;
+}
+
+.five {
+    grid-row: 6;
+}
+
+.song {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+.addButton {
+    background: transparent;
+    border: none;
+    font-size: 3.32em; /* Adjust as necessary */
+    color: #A63C06; /* Same color as your text */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    justify-self: end;
+}
+
+.addButton:hover {
+    transform: scale(1.1); /* Slightly enlarge the button when hovered */
+}
+
+input::placeholder {
+    color: #A63C06;
+}
+
+input:focus {
+    outline: none;
+}
