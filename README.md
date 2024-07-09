@@ -35,7 +35,10 @@ To get started with the Spotify Playlist Creator locally:
   yarn install
 ```
 
-3. Input you client_id and client_secret
+3. Create .env file in the root of your repository and add
+  ```bash
+  VITE_CLIENT_ID=your_client_id
+  ```  
 
 4. Start the development server.
 
