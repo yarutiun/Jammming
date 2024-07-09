@@ -12,7 +12,7 @@ interface SaveBtnProps {
 }
 
 const SaveBtn: FC<SaveBtnProps> = ({ setToken, token, playlist }) => {
-    const REDIRECT_URI = 'http://localhost:5173/';
+    const REDIRECT_URI = 'https://yarutiun-jammming.netlify.app/';
     const encodedRedirectUri = encodeURIComponent(REDIRECT_URI);
     const url = `${AUTH}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodedRedirectUri}&scope=playlist-modify-public`;
 
