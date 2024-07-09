@@ -18,7 +18,7 @@ const AUTH = 'https://accounts.spotify.com/authorize';
 
 const SearchBtn: FC<SearchBtnProps> = ({ val, setArtist, setTrack, token, setToken, setUri }) => {
 
-    const REDIRECT_URI = 'https://yarutiun-jammming.netlify.app/';
+    const REDIRECT_URI = 'http://localhost:5173/';
     const encodedRedirectUri = encodeURIComponent(REDIRECT_URI);
     const url = `${AUTH}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodedRedirectUri}&scope=playlist-modify-public`;
 
