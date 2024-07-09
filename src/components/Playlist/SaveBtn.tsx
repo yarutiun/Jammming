@@ -1,6 +1,7 @@
 import { FC, useEffect } from "react";
 import style from "../../styles/playlist.module.css";
 import { getCode, getAccessToken } from "./PlaylistUtils";
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
 
 const AUTH = 'https://accounts.spotify.com/authorize';
 
@@ -11,7 +12,6 @@ interface SaveBtnProps {
 }
 
 const SaveBtn: FC<SaveBtnProps> = ({ setToken, token, playlist }) => {
-    const CLIENT_ID = ''; //add your client id here
     const REDIRECT_URI = 'http://localhost:5173/';
     const encodedRedirectUri = encodeURIComponent(REDIRECT_URI);
     const url = `${AUTH}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodedRedirectUri}&scope=playlist-modify-public`;

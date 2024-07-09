@@ -17,6 +17,7 @@ const SearchTable: FC<SearchTableProps> = ( { tracks, artists, setPlaylist, play
         setPlaylist(prev => [...prev, { track, artist, uri }]);
     }
 
+
     return ( tracks.length > 0 && artists.length > 0 ?
         <div className={style.wrap}>
             <div className={style.header}>Results</div>

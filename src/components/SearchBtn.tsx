@@ -2,6 +2,7 @@ import style from "../styles/searchBtn.module.css"
 import { FC } from 'react';
 import { useEffect } from 'react';
 import { getCode, getAccessToken } from './Playlist/PlaylistUtils';
+const CLIENT_ID = import.meta.env.VITE_CLIENT_ID;
 
 interface SearchBtnProps {
     val: string;
@@ -14,12 +15,13 @@ interface SearchBtnProps {
 
 const AUTH = 'https://accounts.spotify.com/authorize';
 
+
 const SearchBtn: FC<SearchBtnProps> = ({ val, setArtist, setTrack, token, setToken, setUri }) => {
 
-    const CLIENT_ID = ''; //add your client id here
     const REDIRECT_URI = 'http://localhost:5173/';
     const encodedRedirectUri = encodeURIComponent(REDIRECT_URI);
     const url = `${AUTH}?client_id=${CLIENT_ID}&response_type=code&redirect_uri=${encodedRedirectUri}&scope=playlist-modify-public`;
+
 
     useEffect(() => {
         const code = getCode();
